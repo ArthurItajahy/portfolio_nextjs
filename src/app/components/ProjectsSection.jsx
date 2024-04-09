@@ -18,16 +18,17 @@ const projectsData = [
         image: "/images/projects/Lotr_project.png",
         tag: ["All", "React"],
         gitUrl: "https://github.com/ArthurItajahy/Lord_Project_v2/tree/main",
+       
         previewUrl: "https://lord-project-v2.vercel.app/"
     },
     {
         id: 2,
-        title: "Lord of the rings | Memorial",
-        description: "This project was made with the joy to share my love for the LOTR, all the things have been change because of it.",
-        image: "/images/projects/Lotr_project.png",
+        title: "Gênio Indomavel",
+        description: "This was a conclusion project that I made for the end of the Generation Brazil  Bootcamp. It's not working anymore, but the github explanation still great.",
+        image: "/images/projects/telalogin.png",
         tag: ["All", "React"],
-        gitUrl: "https://github.com/ArthurItajahy/Lord_Project_v2/tree/main",
-        previewUrl: "https://lord-project-v2.vercel.app/"
+        gitUrl: "https://github.com/ArthurItajahy/ReadmeProjectBlogPessoal?tab=readme-ov-file",
+        previewUrl: "https://genioindomavel.netlify.app/"
     },
     {
         id: 3,
