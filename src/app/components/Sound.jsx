@@ -47,7 +47,7 @@ const Sound = () => {
 
       <audio ref={audioRef} loop>
 
-        <source src={"/audio/sad.mp3"} type="audio/mpeg" />
+        <source src={"/audio/narutotheme.mp3"} type="audio/mpeg" />
 
         your browser does not support the audio element.
 
