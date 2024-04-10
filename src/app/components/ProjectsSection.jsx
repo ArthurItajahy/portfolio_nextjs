@@ -25,7 +25,7 @@ const projectsData = [
     {
         id: 2,
         title: "Sumz.AI",
-        description: "This project is a AI summarize it take url articles and summarize for you in a simple then you can understand. This project use OpenAI ChatGPT-4 to make work.",
+        description: "This project is a AI summarize it take url articles and summarize for you in a simple way then you can understand. This project use OpenAI ChatGPT-4 to make work.",
         image: "/images/projects/sum_ai.png",
         tag: ["All", "Next.js"],
         gitUrl: "https://github.com/ArthurItajahy/summrizer_ai",
@@ -42,12 +42,12 @@ const projectsData = [
     },
     {
         id: 4,
-        title: "Next.JS Project 2",
-        description: "This project was made with the joy to share my love for the LOTR, all the things have been change because of it.",
-        image: "/images/projects/Lotr_project.png",
+        title: "Anime Data | Server Side",
+        description: "This project was made to learn Next 14 server side with server actions, Infinite Scroll & framer motion animations.",
+        image: "/images/projects/anime.png",
         tag: ["All", "Next.js"],
-        gitUrl: "https://github.com/ArthurItajahy/Lord_Project_v2/tree/main",
-        previewUrl: "https://lord-project-v2.vercel.app/"
+        gitUrl: "https://github.com/ArthurItajahy/scroll_infinity_nextjs",
+        previewUrl: "https://scroll-infinity-nextjs.vercel.app/"
     },
     {
         id: 5,
