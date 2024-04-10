@@ -21,23 +21,24 @@ const projectsData = [
        
         previewUrl: "https://lord-project-v2.vercel.app/"
     },
+  
     {
         id: 2,
+        title: "Sumz.AI",
+        description: "This project is a AI summarize it take url articles and summarize for you in a simple then you can understand. This project use OpenAI ChatGPT-4 to make work.",
+        image: "/images/projects/sum_ai.png",
+        tag: ["All", "Next.js"],
+        gitUrl: "https://github.com/ArthurItajahy/summrizer_ai",
+        previewUrl: "https://summrizer-ai.vercel.app/"
+    },
+      {
+        id: 3,
         title: "Gênio Indomavel",
         description: "This was a conclusion project that I made for the end of the Generation Brazil  Bootcamp. It's not working anymore, but the github explanation still great.",
         image: "/images/projects/telalogin.png",
         tag: ["All", "React"],
         gitUrl: "https://github.com/ArthurItajahy/ReadmeProjectBlogPessoal?tab=readme-ov-file",
         previewUrl: "https://genioindomavel.netlify.app/"
-    },
-    {
-        id: 3,
-        title: "Lord of the rings | Memorial",
-        description: "This project was made with the joy to share my love for the LOTR, all the things have been change because of it.",
-        image: "/images/projects/Lotr_project.png",
-        tag: ["All", "React"],
-        gitUrl: "https://github.com/ArthurItajahy/Lord_Project_v2/tree/main",
-        previewUrl: "https://lord-project-v2.vercel.app/"
     },
     {
         id: 4,
@@ -101,7 +102,7 @@ const ProjectsSection = () => {
                     isSelected={tag === "Next."} />
             </div>
 
-            <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
+            <div className='grid md:grid-cols-2 gap-8 md:gap-12'>
                 {filteredProject.map((project) => (
                     <ProjectCard
                         key={project.id}
