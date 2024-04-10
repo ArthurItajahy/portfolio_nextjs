@@ -102,7 +102,7 @@ const ProjectsSection = () => {
                     isSelected={tag === "Next."} />
             </div>
 
-            <div className='grid md:grid-cols-2 gap-8 md:gap-12'>
+            <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12'>
                 {filteredProject.map((project) => (
                     <ProjectCard
                         key={project.id}
