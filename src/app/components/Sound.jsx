@@ -46,19 +46,19 @@ const Sound = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1 }}
-        className="w-12 h-12 md:w-20 md:h-16 xl:w-16 xs:h-16 text-foreground rounded-full flex items-center justify-center cursor-pointer z-50 p-2.5 xs:p-9 custom-bg"
+        className=" w-12 h-12 md:w-20 md:h-16 xl:w-16 xs:h-16 text-foreground rounded-full flex items-center justify-center cursor-pointer z-50 p-2.5 xs:p-9 custom-bg"
         aria-label={"Sound control button"}
         name={"Sound control button"}
       >
         {isPlaying ? (
           <Volume2
-            className="text-green-500 w-full h-full text-foreground group-hover:text-accent"
+            className="text-green-500 w-full h-full text-foreground group-hover:text-accent "
             strokeWidth={1.5}
             style={{ opacity: iconOpacity }}
           />
         ) : (
           <VolumeX
-            className="text-white w-full h-full text-foreground group-hover:text-accent"
+            className="text-white w-full h-full text-foreground group-hover:text-accent hover:text-green-300 "
             strokeWidth={0.9}
             style={{ opacity: iconOpacity }}
           />

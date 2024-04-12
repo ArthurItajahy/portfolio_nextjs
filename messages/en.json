@@ -1,0 +1,36 @@
+{
+  "HeroSection": {
+    "firstphrase":"Active the music for better experience...🎧",
+    "title": "Hello, I'm",
+    "secondphrase": "'Hard work beats the natural talent.' - Rock Lee"
+  },
+  "AboutSection":{
+    "title": "About me",
+    "text": "Greetings! I'm Arthur aka Dev.AI, step into my world of web development, where my unwavering belief in the power of hard work fuels every project I undertake. I've learned that dedication and perseverance are the keys to success in programming.",
+    "education": "Education",
+    "certification": "Certification",
+    "languages": "Languages",
+     "senac":"Senac- Computer Engineer",
+    "highschool": "Highschool Complete" ,
+    "english": "English - Fluent",
+    "portuguese": "Portuguese-Br - Native"
+  },
+   "ProjectsSection": {
+
+    "title": "Meus Projetos",
+    "firstphrase": "'Nothing is impossible with a little hard work.",
+    "projects":{
+      "1_description" : "This project was made with the joy to share my love for the LOTR, all the things have been change because of it.",
+      "2_description": "This project is a AI summarize it take url articles and summarize for you in a simple way then you can understand. This project use OpenAI ChatGPT-4 to make work.",
+      "3_description": "This was a conclusion project that I made for the end of the Generation Brazil  Bootcamp. It's not working anymore, but the github explanation still great.",
+    "4_description": "This project was made to learn Next 14 server side with server actions, Infinite Scroll & framer motion animations."
+    
+    }
+  },
+  "ContactSection": {
+
+    "firstphrase": "'A hero is not the one who never falls. He is the one who gets up, again and again, never losing sight of his dreams'- Rock Lee",
+    "thank": "Thank you for see my porfolio."
+
+  }
+}

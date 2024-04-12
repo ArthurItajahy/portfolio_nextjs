@@ -2,22 +2,23 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
-
+import { useTranslations } from "next-intl";
 
 
 function HeroSection() {
+  const t = useTranslations('HeroSection');
   return (
     <section>
       <div className='grid grid-cols-1 lg:grid-cols-12'>
 
         <div className='col-span-7 place-self-center text-center sm:text-left'>
           <p className='flex md:top-18 xl:top-28 top-18 right-2.5 xs:right-4 z-50 group text-[#ADb7BE] text-base sm:text-lg mb-6  lg:text-xl'>
-            Activeted the music for better experience...🎧
+            {t('firstphrase')}
 
           </p>
           <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
             <span className='text-transparent bg-clip-text bg-gradient-to-br from-green-600 via-green-700 to-green-200'>
-              Hello, I'm {" "}
+              {t('title')}{" "}
             </span>
             <br />
 
@@ -42,10 +43,10 @@ function HeroSection() {
 
           </h1>
           <p className='text-[#ADb7BE] text-base sm:text-lg mb-6  lg:text-xl'>
-            "Hard work beats the natural talent." - Rock Lee
+            {t('secondphrase')}
 
           </p>
-          <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-600 via-green-700 to-green-200 hover:bg-white text-white '>Hire Me</button>
+        
           <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-600 via-green-700 to-green-200 hover:bg-slate-800 text-white  mt-3'>
             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span></button>
         </div>

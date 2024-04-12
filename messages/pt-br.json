@@ -1,0 +1,34 @@
+{
+  "HeroSection": {
+    "firstphrase": "Ative a musica para melhor experiência...🎧",
+    "title": "Olá, Eu sou",
+    "secondphrase": "'O trabalho duro vence o dom natural.' - Rock Lee"
+  },
+  "AboutSection": {
+    "title": "Sobre mim",
+    "text": "E ai. Eu sou Arthur mais conhecido como Dev.AI, vamos entrar no meu mundo de desenvilvimento web, onde minha crença inabalável no poder do trabalho árduo alimenta cada projeto que começo. Aprendi que dedicação e perseverança são as chaves para o sucesso na programação.",
+    "education": "Formação",
+    "certification": "Certificados",
+    "languages": "Idiomas",
+    "senac": "Senac- Engenharia da Computação",
+    "highschool": "Ensino Medio Completo",
+    "english": "Inglês - Fluente",
+    "portuguese": "Português-Br - Nativo"
+  },
+  "ProjectsSection": {
+    "title": "Meus Projetos",
+    "firstphrase": "'Nada é impossivel com um pouco de trabalho duro.'",
+    "projects": {
+      "1_description": "Este projeto foi feito com a alegria de compartilhar meu amor pelo LOTR, todas as coisas mudaram por causa dele.",
+      "2_description": "Este projeto é um criador de resumo usando IA, ele consiste pegar a url dos artigos e resumindo-os para você de uma forma simples para que você possa entender. Este projeto usa OpenAI ChatGPT-4 para fazer o funcionar.",
+      "3_description": "Este foi um projeto de conclusão de curso que fiz para o encerramento do Bootcamp Generation Brasil. Não está mais funcionando, mas a explicação do github ainda é ótima.",
+      "4_description": "Este projeto foi feito para aprender o Next 14 server side com server actions, Infinite Scroll & framer motion animations."
+    }
+  },
+  "ContactSection": {
+
+    "firstphrase": "'Herói não é aquele que nunca cai. Ele é aquele que se levanta de novo e de novo, nunca perdendo de vista seus sonhos'- Rock Lee",
+    "thank": "Obrigado por ver meu porfolio."
+
+  }
+}

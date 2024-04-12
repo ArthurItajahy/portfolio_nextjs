@@ -1,8 +1,22 @@
 "use client"
-import React, { useTransition, useState } from 'react'
+import React, { useTransition, useState, useEffect } from 'react'
 import Image from 'next/image';
 import TabButton from './TabButton';
+import { useTranslations } from "next-intl";
+import { Roller } from '../hoc';
 
+
+
+
+const AboutSection = () => {
+    const t =useTranslations("AboutSection");
+    const [tab, setTab] = useState("skills");
+    const [isPeding, startTranstion] = useTransition();
+    const handleTabChange = (id) => {
+        startTranstion(() => {
+            setTab(id);
+        });
+    };
 
 const TAB_DATA = [
 
@@ -29,8 +43,8 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Senac - Computer Engieneer</li>
-                <li>Hight School Complete</li>
+                <li>{t('senac')}</li>
+                <li>{t('highschool')}</li>
             </ul>
         )
 
@@ -53,25 +67,15 @@ const TAB_DATA = [
         id: "languages",
         content: (
             <ul className='list-disc pl-2'>
-                <li>English - Fluent</li>
-                <li>Portuguese Brazil - Native </li>
+                <li>{t('english')}</li>
+                <li>{t('portuguese')} </li>
 
             </ul>
         )
     }
 
 
-]
-
-
-const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
-    const [isPeding, startTranstion] = useTransition();
-    const handleTabChange = (id) => {
-        startTranstion(() => {
-            setTab(id);
-        });
-    };
+]    
     return (
         <section className='text-white'>
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-7 xl:gap-16 sm:py-16 xl:px-16'>
@@ -79,12 +83,9 @@ const AboutSection = () => {
                     width={600} height={600}
                     className='rounded-3xl ' />
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-                    <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+                    <h2 className='text-4xl font-bold text-white mb-4'>{t('title')}</h2>
                     <p className='text-base lg:text-lg'>
-                        Greetings! I'm Arthur aka Dev.AI, step into my world of web development,
-                        where my unwavering belief in the power of hard work fuels every project I undertake.
-                        I've learned that dedication and perseverance are the keys to success in programming.
-                       
+                       {t('text')}
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
                         <TabButton
@@ -95,17 +96,17 @@ const AboutSection = () => {
                         <TabButton
                             selectTab={() => handleTabChange("education")}
                             active={tab === "education"}>
-                            {" "}  Education{" "}
+                            {" "}  {t('education')}{" "}
                         </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("certification")}
                             active={tab === "certification"}>
-                            {" "}  Certification {" "}
+                            {" "}  {t('certification')}{" "}
                         </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("languages")}
                             active={tab === "languages"}>
-                            {" "}  Languages {" "}
+                            {" "} {t('languages')}{" "}
                         </TabButton>
 
                     </div>
@@ -117,4 +118,4 @@ const AboutSection = () => {
     )
 }
 
-export default AboutSection
+export default Roller(AboutSection, "about")

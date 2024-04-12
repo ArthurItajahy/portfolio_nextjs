@@ -10,8 +10,10 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import  github2  from "./github.png";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations('ContactSection')
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -70,14 +72,14 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden justify-center`}
+      className={`xl:mt-12 w-full flex xl:flex-row flex-col-reverse gap-10 overflow-hidden justify-center`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[10.75] bg-gradient-to-br from-green-900 via-green-600 to-green-200  p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>"A hero is not the one who never falls. He is the one who gets up, again and again, never losing sight of his dreams" <br/>- Rock Lee</p>
-        <h3 className={styles.sectionHeadText}>Thank you for see this work.</h3>
+        <p className={styles.sectionSubText}>{t('firstphrase')}</p>
+        <h3 className={styles.sectionHeadText}>{t('thank')}</h3>
            <p className={styles.sectionSubText}>Made By DEV.AI</p>
          <div className='gap-3 inset-2  flex justify-left mt-2 card-img_hover'>
             <div

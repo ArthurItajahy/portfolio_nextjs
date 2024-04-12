@@ -1,3 +1,4 @@
 import SectionWrapper from "./SectionWrapper";
+import Roller from "./Roller"
 
-export { SectionWrapper };
+export { SectionWrapper, Roller };
