@@ -76,11 +76,11 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[10.75] bg-gradient-to-br from-green-900 via-green-600 to-green-200  p-8 rounded-2xl'
+        className='text-white flex-[10.75] bg-gradient-to-br from-green-900 via-green-600 to-green-200  p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>{t('firstphrase')}</p>
-        <h3 className={styles.sectionHeadText}>{t('thank')}</h3>
-           <p className={styles.sectionSubText}>Made By DEV.AI</p>
+        <p className={`${styles.sectionSubText} text-white`}>{t('firstphrase')}</p>
+        <h3 className={`${styles.sectionHeadText} text-white`}>{t('thank')}</h3>
+           <p className={`${styles.sectionSubText} text-white`}>Made By DEV.AI</p>
          <div className='gap-3 inset-2  flex justify-left mt-2 card-img_hover'>
             <div
               onClick={() => window.open('https://github.com/ArthurItajahy', "_blank")}

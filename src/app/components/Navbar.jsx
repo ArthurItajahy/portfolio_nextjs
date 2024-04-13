@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import LocalSwitcher from "./local-switecher"
 
+
 const navLinks = [
   {
     title: "About",
@@ -33,7 +34,14 @@ const Navbar = () => {
         >
           Portfolio
         </Link>
-        <LocalSwitcher/>
+        <div className="fixed left-2 top-20 lg:top-6 invisible sm:visible">
+                <LocalSwitcher />
+
+            </div>
+        <div className="visible sm:invisible">
+          <LocalSwitcher />
+
+        </div>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
